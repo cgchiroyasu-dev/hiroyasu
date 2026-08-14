@@ -5,9 +5,11 @@
 
 export const siteConfig = {
   // 基本情報
-  name: "cgchiroyasu",
-  tagline: "Visual Artist & Developer",
-  bio: "TouchDesigner, GLSL, Webの交差点でリアルタイム表現を作るクリエイター。VJ、インタラクティブアート、プロダクト開発。",
+  name: "Hy-ro",
+  tagline: "VJ / Beatmaker / Creative Coder",
+  heroDescription: "TouchDesigner, GLSL, Web — the intersection of code and live visual art.",
+  ctaHeading: "Let's create something.",
+  bio: "TouchDesigner, GLSL, Webの交差点でリアルタイム表現を作るクリエイター。VJ、ビートメイク、インタラクティブアート、プロダクト開発。",
   location: "Tokyo, Japan",
 
   // 連絡先・SNS（空文字にするとリンクが非表示になります）

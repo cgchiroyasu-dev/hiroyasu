@@ -65,7 +65,7 @@ export default function Lab() {
   return (
     <section id="lab" className="section">
       <div className="section-header">
-        <span className="section-badge liquid-glass">Lab / Archive</span>
+        <h2 className="section-badge liquid-glass">Lab / Archive</h2>
       </div>
 
       <motion.div

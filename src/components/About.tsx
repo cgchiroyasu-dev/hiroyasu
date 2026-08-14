@@ -24,7 +24,7 @@ export default function About() {
   return (
     <section id="about" className="section">
       <div className="section-header">
-        <span className="section-badge liquid-glass">About</span>
+        <h2 className="section-badge liquid-glass">About</h2>
       </div>
 
       {/* Stats row */}

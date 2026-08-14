@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cgchiroyasu-dev.github.io/hiroyasu/sitemap.xml

@@ -3,14 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hiroyasu — Visual Artist & Developer. TouchDesigner, GLSL, Web." />
-    <meta property="og:title" content="Hiroyasu" />
-    <meta property="og:description" content="Visual Artist & Developer" />
+
+    <!-- SEO -->
+    <title>Hy-ro — VJ / Beatmaker / Creative Coder</title>
+    <meta name="description" content="Hy-ro — TouchDesigner, GLSL, Webの交差点でリアルタイム表現を作るVJ / ビートメイカー / クリエイティブコーダー。VJ出演・映像演出・アートワーク制作。" />
+
+    <!-- OGP -->
+    <meta property="og:title" content="Hy-ro — VJ / Beatmaker / Creative Coder" />
+    <meta property="og:description" content="TouchDesigner, GLSL, Webの交差点でリアルタイム表現を作るクリエイター。" />
     <meta property="og:type" content="website" />
-    <title>Hiroyasu</title>
+    <meta property="og:url" content="https://cgchiroyasu-dev.github.io/hiroyasu/" />
+    <meta property="og:image" content="https://cgchiroyasu-dev.github.io/hiroyasu/og-image.png" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="Hy-ro" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hy-ro — VJ / Beatmaker / Creative Coder" />
+    <meta name="twitter:description" content="TouchDesigner, GLSL, Webの交差点でリアルタイム表現を作るクリエイター。" />
+    <meta name="twitter:image" content="https://cgchiroyasu-dev.github.io/hiroyasu/og-image.png" />
+    <meta name="twitter:site" content="@cgchiroyasu" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/hiroyasu/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/hiroyasu/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/hiroyasu/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/hiroyasu/apple-touch-icon.png" />
+
+    <!-- Font preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hy-ro",
+      "alternateName": "cgchiroyasu",
+      "jobTitle": "VJ / Beatmaker / Creative Coder",
+      "description": "TouchDesigner, GLSL, Webの交差点でリアルタイム表現を作るクリエイター",
+      "url": "https://cgchiroyasu-dev.github.io/hiroyasu/",
+      "image": "https://cgchiroyasu-dev.github.io/hiroyasu/og-image.png",
+      "sameAs": [
+        "https://github.com/cgchiroyasu-dev",
+        "https://www.instagram.com/cgchiroyasu/",
+        "https://x.com/cgchiroyasu",
+        "https://www.youtube.com/channel/UCMOKob27WSQi5jdRJmdawCQ"
+      ],
+      "knowsAbout": ["VJ", "GLSL", "TouchDesigner", "Beatmaking", "Creative Coding", "Ableton Live", "TidalCycles"]
+    }
+    </script>
+
+    <!-- Loading state inline style (removed when React mounts) -->
+    <style>
+      .loading{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#0A0A0A;z-index:9999}
+      .loading-bar{width:40px;height:1px;background:#3A3A3A;position:relative;overflow:hidden}
+      .loading-bar::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:#CDFF00;animation:lscan 1.5s ease-in-out infinite}
+      @keyframes lscan{0%{left:-100%}50%{left:0}100%{left:100%}}
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="background:#0A0A0A">
+    <div id="root">
+      <div class="loading"><div class="loading-bar"></div></div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

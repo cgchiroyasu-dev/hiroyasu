@@ -31,7 +31,7 @@ function WorkItem({ work }: { work: Work }) {
       <span className="work-index">{work.index}</span>
 
       <div className="work-body">
-        <h2 className="work-title">{work.title}</h2>
+        <h3 className="work-title">{work.title}</h3>
         {work.subtitle && (
           <p className="work-subtitle">{work.subtitle}</p>
         )}
@@ -73,7 +73,7 @@ function WorkItem({ work }: { work: Work }) {
       {work.mediaUrl ? (
         <div className="work-media">
           {work.mediaType === 'video' ? (
-            <video src={work.mediaUrl} muted loop playsInline />
+            <video src={work.mediaUrl} muted loop playsInline preload="metadata" />
           ) : (
             <img src={work.mediaUrl} alt={work.title} loading="lazy" />
           )}
@@ -89,7 +89,7 @@ export default function Works() {
   return (
     <section id="works" className="section">
       <div className="section-header">
-        <span className="section-badge liquid-glass">Selected Works</span>
+        <h2 className="section-badge liquid-glass">Selected Works</h2>
       </div>
 
       <motion.div

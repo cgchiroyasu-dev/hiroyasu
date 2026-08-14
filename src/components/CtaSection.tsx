@@ -16,7 +16,7 @@ export default function CtaSection() {
         viewport={{ once: true, margin: '-60px' }}
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
       >
-        Let's create something.
+        {siteConfig.ctaHeading}
       </motion.h2>
 
       <motion.p
